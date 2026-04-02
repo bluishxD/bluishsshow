@@ -109,8 +109,17 @@
       <div class="card upcoming-card">
         <img src="./templates/episode3.png" alt="Episode 3" loading="lazy">
         <h3>Episode 3 – We5lie</h3>
-        <p>Details to be announced Soon</p>
-        <span class="button disabled">Coming soon</span>
+        <p>A deep dive into We5lie's Story</p>
+        <span class="button disabled">April 9</span>
+        <p class="local-time-text">
+          Show begins at your local time: <span class="local-time"></span>
+        </p>
+
+        <div class="countdown" id="countdown"></div>
+
+        <a href="https://x.com/i/spaces/1mxPaLlMXjYKN?s=20" target="_blank" class="button live-btn" style="display:none;">
+          Join Live
+        </a>
       </div>
     </div>
 
@@ -188,7 +197,7 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const eventDate = new Date("2026-03-24T09:00:00-05:00"); // 9:00 AM EST
+  const eventDate = new Date("2026-04-09T09:00:00-02:30"); // 9:00 AM EST
 
   function updateLocalTime() {
     const localTimeEl = document.querySelector(".local-time");
